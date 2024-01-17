@@ -39,13 +39,13 @@ const questions = [
     {
         type: "input",
         name: "tests",
-        message: "How can developers contribute to your project?",
+        message: "please, provide instructions on how to test your project",
 
     },
     {
         type: "input",
-        name: "Questions",
-        message: "Please, provide contact information",
+        name: "questions",
+        message: "Please, provide guidelines for questions",
 
     },
     {
