@@ -16,7 +16,7 @@
   The steps to install this project are:  Clone the code, install the necessary technologies, nodejs, npm, and inquirer; run the app with the command: node index.js
 
   ## Usage Instructions:
-  Follow installation instruction, run the app and it show look like this image ![app-preview](./images/readme_screenshot.jpg)
+  Follow installation instruction, run the app and it show look like this image ![app-preview](./images/readme_screenshot.JPG)
 
   ## Contributing
   To contribute to this project: create a fork and pull request.

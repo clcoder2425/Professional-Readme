@@ -44,7 +44,7 @@ WHEN I click on the links in the Table of Contents THEN I am taken to the corres
   3. Run the app with the command: node index.js
 
   ## Usage Instructions:
-  ![appPreview](./images/readme_screenshot.JPG)
+  ![appPreview](./assets/images/readme_screenshot.JPG)
 
   ## Skills Improved:
 - The use of nodejs module
