@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
+// Importing "fs", "inquire" and "generateMarkdown" file
 const fs = require("fs");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
-// TODO: Create an array of questions for user input
+// Array of questions to ask user input
 const questions = [
     {
         type: "input",
@@ -11,54 +11,54 @@ const questions = [
     },
     {
         type: "input",
-        name: "Description",
+        name: "description",
         message: "Type in the description of your project, answer the questions what, why and how?"
     },
     {
         type: "input",
-        name: "Installation",
+        name: "installation",
         message: "What are the steps require to install your project? List a step by step description?"
     },
     {
         type: "input",
-        name: "Usage",
-        message: "Provide example and instructions for usage. Include screenshoots, using the following sintax: ![](./assets/images/screenshot.jpg)",
+        name: "usage",
+        message: "Provide example and instructions for usage. Include screenshoots, using the following sintax: ![](./images/screenshot.jpg)",
     },
     {
         type: "list",
-        name: "License",
+        name: "license",
         message: "Which license would you like to use for this project?",
         choices:["MIT License", "Apache License 2.0", "GNU General Public License v3.0", "Mozilla Public License 2.0", "None"],
     },
     {
         type: "input",
-        name: "Author",
+        name: "author",
         message: "Please, enter your name ",
     },
     {
         type: "input",
-        name: "Github",
+        name: "github",
         message: "Please enter your github project link: ",
     },
 ];
 
-// TODO: Create a function to write README file
+// Function to write Readme file
 function writeToFile(fileName, data) {
-    try {
-        fs.writeFile(fileName, data)
-        console.log("Congratulations, the (Generated)Readme.md file has been successfully created!");
-    } catch (error) {
-        return console.log(error)
-    }
+   fs.writeFile(fileName, data, function(error){
+if(error){
+    return console.log(error);
+}
+console.log("Congratulations, the (Generated)Readme has been successfully created");
+   });
 }
 
-// TODO: Create a function to initialize app
-function init() {
+// function to initialize the app
+async function init() {
     console.log("Starting of the Generated Readme.md generator");
-    const userAnswers = await inquirer.createPrompt(questions);
+    const userAnswers = await inquirer.prompt(questions);
     var readmeData = generateMarkdown(userAnswers);
     writeToFile("(Generated)Readme.md", readmeData);
 }
 
-// Function call to initialize app
+//calling init function
 init();
