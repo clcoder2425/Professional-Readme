@@ -32,8 +32,26 @@ const questions = [
     },
     {
         type: "input",
-        name: "author",
-        message: "Please, enter your name ",
+        name: "contributing",
+        message: "How can developers contribute to your project?",
+
+    },
+    {
+        type: "input",
+        name: "tests",
+        message: "How can developers contribute to your project?",
+
+    },
+    {
+        type: "input",
+        name: "Questions",
+        message: "Please, provide contact information",
+
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "Please, enter your email ",
     },
     {
         type: "input",

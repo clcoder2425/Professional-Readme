@@ -48,8 +48,10 @@ function generateMarkdown(data) {
   - [Installation Instructions](#Installation-Instructions)
   - [Usage](#Usage-Instructions)
   - [License](#License)
-  - [Author](#Author)
-  - [Github](#github-link)
+  - [Contributing](#Contributing)
+  - [Tests](#Tests)
+  - [Questions](#Questions)
+  
 
   ## Installation Instructions:
   ${data.installation}
@@ -57,10 +59,15 @@ function generateMarkdown(data) {
   ## Usage Instructions:
   ${data.usage}
 
-  ## Author: 
-  ${data.author}
+  ## Contributing
+  ${data.contributing}
 
-  ## Github link:
+  ## Tests
+  ${data.tests}
+
+  ## Questions: 
+  ${data.questions}
+  ${data.email}
   ${data.github}
 
   ${renderLicenseSection(data.license)}
