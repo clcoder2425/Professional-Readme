@@ -52,7 +52,7 @@ WHEN I click on the links in the Table of Contents THEN I am taken to the corres
 - The use of the inquirer package, prompt, reading (fs) and writing files.
 
   ## Author: 
-  Carmen Murphy
+  https://github.com/clcoder2425
 
   ## Github link:
   https://github.com/clcoder2425/Professional-Readme.git
